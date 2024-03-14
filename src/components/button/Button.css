@@ -1,0 +1,21 @@
+.button-b button {
+  font-family: Rubik;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  padding: 5px 40px;
+  color: #fff;
+  background-color: #c51e1e;
+  border-radius: 10px;
+  border: none;
+  margin-top: 2vh;
+}
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+.button-b button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #f50202;
+  transition: 0.5s;
+}

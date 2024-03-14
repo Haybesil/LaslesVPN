@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    margin-top: 13vh;
+}
+
+.slider {
+    display: flex; 
+    gap: 2vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-inline: 10vw;
+    
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+  }
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid #878a8f;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    border: 2px solid #db1717;
+}
+
+
+.flexy {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.flexy img.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.flexy img.star {
+    height: 16px;
+    width: 16px;
+}
+
+.flexy h2.name {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    text-wrap: nowrap;
+    color: #0B132A;
+
+}
+
+.flexy p.country {
+    font-family: Rubik;
+font-size: 12px;
+font-weight: 400;
+text-align: center;
+color: #4F5665;
+
+}
+
+.flexy h3 {
+    font-family: Rubik;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color: #0B132A;
+
+
+}
+
+.cards p.comment {
+font-family: Rubik;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #0B132A;
+
+}
+
+.button {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50vw;
+}
+
+.button .right {
+    position: relative;
+    top: 15px;
+}
+
+.button .left {
+    position: relative;
+    left: 2vw;
+}

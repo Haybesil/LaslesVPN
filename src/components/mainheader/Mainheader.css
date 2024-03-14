@@ -1,0 +1,144 @@
+.main-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    padding-top: 15vh;
+    background: linear-gradient(to bottom, #d6d3d3 -150%, #ffffff);
+}
+
+.main-header > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header > div:nth-child(1) h1 {
+    font-family: Rubik;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.main-header > div:nth-child(1) p {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4F5665;
+    padding-inline: 20vw;
+}
+
+
+.flex {
+    display: flex;
+    margin-inline: 9vw;
+    gap: 60px;
+    margin-top: 23vh;
+}
+
+
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c2c5cc; 
+    border-radius: 10px;
+    padding: 15px 60px;
+}
+
+.pricing:hover {
+    border: 2px solid #F53838; 
+}
+
+.pricing .box {
+    width: 144px;
+    height: 165px;
+}
+
+.pricing .box+h1 {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0B132A;
+
+}
+
+.pricing ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    padding-left: 3px;
+}
+
+.pricing ul li {
+    list-style: none;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4F5665;
+
+}
+
+.pricing ul li img {
+    width: 24px;
+    height: 24px;
+    right: 10px;
+    top: 8px;
+    position: relative;
+
+}
+
+.pricing ul+h1 {
+    font-family: Rubik;
+font-size: 25px;
+font-weight: 800;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.pricing ul+h1 span {
+   font-weight: 400;
+   color: #4F5665;
+}
+
+
+.pricing button {
+    width: 177.88px;
+    height: 45px;
+    border-radius: 50px;
+    border:2px solid #F53838;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #F53838;
+    margin-top: 2vh;
+}
+.pricing button:hover {
+    border:2px solid #fff;
+     background-color: #F53838;
+    color: #fff;
+    
+}

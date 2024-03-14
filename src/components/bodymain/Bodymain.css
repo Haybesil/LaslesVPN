@@ -1,0 +1,39 @@
+.body-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12vh;
+    background: linear-gradient(to bottom, #ddd8d8, #ffffff);;
+    padding-bottom: 20vh;
+}
+
+.body-main > div:nth-child(1) {
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.body-main > div:nth-child(1) h1 {
+    font-family: Rubik;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0B132A;
+
+}
+
+.body-main > div:nth-child(1) p{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4F5665;
+
+}
+
+
+
