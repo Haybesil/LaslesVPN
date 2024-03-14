@@ -42,23 +42,33 @@ const Signup = () => {
         />
 
         <label htmlFor="password" className="text-gray-700 font-medium mb-1">
-          Password
+          Phone
         </label>
         <input
           id="password"
           className="border border-gray-400 p-2 rounded"
-          type="password"
+          type="text"
           placeholder="Enter your password"
         />
 
         <label htmlFor="confirmPassword" className="text-gray-700 font-medium mb-1">
-          Confirm Password
+          Password
         </label>
         <input
           id="confirmPassword"
           className="border border-gray-400 p-2 rounded"
           type="password"
-          placeholder="Confirm password"
+          placeholder="Password"
+        />
+
+         <label htmlFor="confirmPassword" className="text-gray-700 font-medium mb-1">
+          Postal Code
+        </label>
+        <input
+          id="confirmPassword"
+          className="border border-gray-400 p-2 rounded"
+          type="number"
+          placeholder="Postal Code"
         />
 
         <input
