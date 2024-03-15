@@ -1,78 +1,105 @@
-import React, { useState } from 'react'
-import './Navbar.css'
-import Logo from '../../assets/images/navbar-logo/Logo.png'
-import { Link } from 'react-router-dom'
-import { GiHamburgerMenu } from "react-icons/gi";
-import Button from '../button/Button'
+import React, { useState } from 'react';
+import './Navbar.css';
+import Logo from '../../assets/images/navbar-logo/Logo.png';
+import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from "react-icons/io5";
+import Button from '../button/Button';
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
 
-   const [showModal, setShowModal] = useState(false);
+  const toggle = () => {
+    setShowModal(!showModal);
+  };
 
-   const toggle = () => {
-         setShowModal(!showModal) 
-   }
-
-   const closeModal = () => {
-     setShowModal(false); 
-   }
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
-    <div className='navbar'>
-      <Link to='/'>
-          <img src={Logo} alt="" />
+    <div className="navbar">
+      <Link to="/">
+        <img src={Logo} alt="" />
       </Link>
-      <ul>
-        <li>
-          <Link to = '/about'>About</Link>
-        </li>
-        <li>
-          <Link to = '/about'>Features</Link>
-        </li>
-        <li>
-          <Link to = '/about'>Services</Link>
-        </li>
-        <li>
-          <Link to = '/about'>Testimonials</Link>
-        </li>
-      
-      </ul>
+      <div className="hidden md:block">
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/about">Features</Link>
+          </li>
+          <li>
+            <Link to="/about">Services</Link>
+          </li>
+          <li>
+            <Link to="/about">Testimonials</Link>
+          </li>
+        </ul>
+      </div>
 
-      <ol>
-        <li>
-          <Link to = '/signin'>Sign In</Link>
-        </li>
-        <li>
-        <Link to = '/signup'>Sign Up</Link>
-        </li>
-      </ol>
+      <div className="hidden md:block">
+        <ol>
+          <li>
+            <Link to="/signin">Sign In</Link>
+          </li>
+          <li>
+            <Link to="/signup">Sign Up</Link>
+          </li>
+        </ol>
+      </div>
       <div>
-         <GiHamburgerMenu size= '40' color='red' onClick={toggle}/>
-      
-       {showModal && (
-          <div className="fixed my-auto right-0 left-0 flex flex-col justify-center items-center z-50 backdrop:blur">
-          <div className="bg-white p-6 rounded-lg border-2">
-            <h2 className="text-xl font-bold mb-4">Modal Content</h2>
-            <p>This is some text in the modal.</p>
-            <p>Another paragraph of text.</p>
-            <p>This is some text in the modal.</p>
-            <p>Another paragraph of text.</p>
-            <p>This is some text in the modal.</p>
-            <p>Another paragraph of text.</p>
-            <p>This is some text in the modal.</p>
-            <p>Another paragraph of text.</p>
-            <p>This is some text in the modal.</p>
-            <p>Another paragraph of text.</p>
-            <button onClick={closeModal} className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
-              Close Modal
-            </button>
-          </div>
-        </div>
-      )} 
-     </div>
-    </div> 
-    
-  )
-}
+        <GiHamburgerMenu
+          className="mt-4"
+          size="40"
+          color="red"
+          onClick={toggle}
+        />
 
-export default Navbar
+        {showModal && (
+          <div className="fixed right-0 left-20 bottom-10  z-50 backdrop:blur">
+            <div className="bg-red-500 p-6 rounded-lg border-2">
+              <div className="">
+                <ul className="flex flex-col items-center">
+                  <li className='text-[30px]'>
+                    <Link to="/about" className='text-white hover:text-gray-700'>About</Link>
+                  </li>
+                  <li className='text-[30px]'>
+                    <Link to="/about" className='text-white hover:text-gray-700'>Features</Link>
+                  </li>
+                  <li className='text-[30px]'>
+                    <Link to="/about" className='text-white hover:text-gray-700'>Services</Link>
+                  </li>
+                  <li className='text-[30px]'>
+                    <Link to="/about" className='text-white hover:text-gray-700'>Testimonials</Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="">
+                <ol className='flex flex-col'>
+                  <li className='text-[20px] hover:bg-white'>
+                    <Link to="/signin " className='text-white p-10 hover:text-red-700'>Sign In</Link>
+                  </li>
+                  <li className='text-[18px] hover:bg-white'>
+                    <Link to="/signup" className='text-white p-10 hover:text-red-700'>Sign Up</Link>
+                  </li>
+                </ol>
+              </div>
+              <IoClose 
+                size="40"
+                color="red"
+                onClick={closeModal}
+                className="ml-[28vw] bg-red-200 rounded mt-[10px]"
+              />
+        
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

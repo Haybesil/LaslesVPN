@@ -9,7 +9,7 @@ const Signup = () => {
     <>
     <Navbar/>
     <div className="my-1 justify-center">
-      <form className="flex flex-col gap-1 max-w-lg mx-auto p-6 bg-white border border-gray-300 shadow-lg rounded-lg">
+      <form className="flex flex-col gap-1 max-w-lg mx-auto p-6 bg-white border border-gray-200 shadow-lg rounded-lg">
         <h1 className="text-xl bg-red-500 text-white p-4 rounded-t-lg">Sign Up</h1>
         <label htmlFor="firstName" className="text-gray-700 font-medium mb-1">
           First Name
