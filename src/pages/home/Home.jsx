@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Heroheader from '../../components/heroheader/Heroheader'
 import Headersection from '../../components/headersection/Headersection'
@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar/>
        <Heroheader/>
        <Headersection/>
-       <Headermain/>
+       <Headermain/> {/*Do something here*/}
        <Mainheader/>
        <Body/>
        <Bodymain/>

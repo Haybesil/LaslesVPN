@@ -142,3 +142,13 @@ text-align: center;
     color: #fff;
     
 }
+
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        margin-inline: 9vw;
+        gap: 60px;
+        margin-top: 23vh;
+    }
+}

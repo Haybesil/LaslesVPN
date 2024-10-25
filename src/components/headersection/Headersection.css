@@ -58,3 +58,23 @@
     text-align: left;
     color: #4F5665;
 }
+
+@media screen and (max-width: 600px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 11vw;
+        margin-top: 10vh;
+        margin-inline: 18vw;
+        height: 50vh;
+    }
+
+    .hero-section .borderlr {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #c9c9c9;
+        border-top: 1px solid #c9c9c9;
+    }
+}

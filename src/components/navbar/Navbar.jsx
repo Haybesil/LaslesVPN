@@ -22,7 +22,7 @@ const Navbar = () => {
       <Link to="/">
         <img src={Logo} alt="" />
       </Link>
-      <div className="hidden md:block">
+      <div className="hidden md:hidden lg:block">
         <ul>
           <li>
             <Link to="/about">About</Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden md:hidden lg:block">
         <ol>
           <li>
             <Link to="/signin">Sign In</Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
       <div>
         <GiHamburgerMenu
-          className="mt-4"
+          className="mt-4 block lg:hidden"
           size="40"
           color="red"
           onClick={toggle}
